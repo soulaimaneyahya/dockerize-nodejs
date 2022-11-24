@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head.ejs') %>
+<body class="container">
+    <%- include('../partials/nav.ejs') %>
+    <div class="contact-blog blog">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+          <label for="content">Content:</label>
+          <textarea id="content" name="content" required></textarea>
+          <button class="btn-primary">Send</button>
+        </form>
+      </div>
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<form>
+    <label for="title">Blog title:</label>
+    <input type="text" id="title" name="title" <% if(typeof blog !== 'undefined') { %> value="<%= blog.title %>" <% } %> required>
+
+    <label for="snippet">Blog snippet:</label>
+    <input type="text" id="snippet" name="snippet" <% if(typeof blog !== 'undefined') { %> value="<%= blog.snippet %>" <% } %> required>
+
+    <label for="content">Blog content:</label>
+    <textarea type="text" id="content" name="content" required><% if(typeof blog !== 'undefined') { %><%= blog.content %><% } %></textarea>
+
+    <button class="btn-primary">
+        <% if(typeof blog !== 'undefined') { %> Update <% } else { %> Create <% } %>
+    </button>
+</form>
