@@ -1,4 +1,4 @@
-# Nodejs-Blogger
+# dockerize-nodejs
 building blogger using nodejs &amp; express js usign Docker.
 
 
@@ -6,6 +6,14 @@ building blogger using nodejs &amp; express js usign Docker.
 
 ```sh
 git clone https://github.com/soulaimaneyahya/nodejs-blogger.git
+```
+
+## Pull docker image
+
+Src; https://hub.docker.com/r/753488/nodejs-blogger
+
+```
+docker pull 753488/nodejs-blogger:v1
 ```
 
 ## Start Docker 🐳
